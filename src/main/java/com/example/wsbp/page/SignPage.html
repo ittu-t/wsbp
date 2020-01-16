@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head></head>
+<body>
+    <h1>サインイン</h1>
+    <form action="#" wicket:id="userInfo">
+        <div>ユーザ名:<input type="text" wicket:id="userName"/></div>
+        <div>パスワード:<input type="password" wicket:id="userPass"/></div>
+        <div>
+            <button type="submit">サインイン</button>
+        </div>
+    </form>
+
+    <h2>このシステムに登録されているユーザー・パスワード一覧</h2>
+    <ol>
+        <li wicket:id="users">
+            <span wicket:id="userName"></span>,
+            <span wicket:id="userPass"></span>
+        </li>
+    </ol>
+
+</body>
+</html>
